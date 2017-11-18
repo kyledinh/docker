@@ -12,6 +12,7 @@ RUN mkdir /opt/app \
 && apt-get -y install nodejs \
 && apt-get -y install npm \
 && rm -rf /var/lib/apt/lists/* \
+&& npm install gulp \
 && cd /tmp \
 && wget -q https://storage.googleapis.com/golang/go1.9.1.linux-amd64.tar.gz \
 && tar -C /usr/local -xzf go1.9.1.linux-amd64.tar.gz \
@@ -19,3 +20,4 @@ RUN mkdir /opt/app \
 
 ENV GOPATH /opt
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
+ENV NODE_PATH /opt/src/node_modules
