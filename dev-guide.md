@@ -43,7 +43,7 @@ Docker provides a set of tools to manage an IT infrastructure from source code t
 | docker stop `container-id` | |
 | docker ps -q &#124; xargs docker kill | # kill all containers |
 | docker attach `container-id` | |
-| docker exec -it `container-id` /bin/bash | # ssh into a container |
+| docker exec -it `container-id` bash | # ssh into a container |
 | docker container ls -a |# List all containers, even those not running|
 | docker container stop `hash` |# Gracefully stop the specified container|
 | docker container kill `hash` |# Force shutdown of the specified container|
@@ -56,6 +56,8 @@ Docker provides a set of tools to manage an IT infrastructure from source code t
 | docker-compose build | |
 | docker-compose up | |
 | docker-compose down | |
+| docker-compose kill | stop containers |
+| docker-compose rm | erase stopped containers |
 | docker-compose ps | #Lists the containers for yml file |
 
 | Docker Hub Commands | Desc |
