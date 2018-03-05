@@ -1,0 +1,43 @@
+version: '2'
+services:
+
+  # The Application
+  app:
+    build:
+      context: ./dockerfiles/
+      dockerfile: app.dockerfile
+    working_dir: /var/www
+    volumes:
+      - ../web:/var/www
+      - ./Dockerfile/ssl:/etc/nginx/ssl
+    environment:
+      - "DB_PORT=3306"
+      - "DB_HOST=database"
+
+  # The Web Server
+  web:
+    build:
+      context: ./dockerfiles/
+      dockerfile: web.dockerfile
+    working_dir: /var/www
+    volumes_from:
+      - app
+    ports:
+      - 80:80
+      - 443:443
+
+  # The Database
+  database:
+    image: mysql:5.6
+    volumes:
+      - dbdata:/var/lib/mysql
+    environment:
+      - "MYSQL_DATABASE=homestead"
+      - "MYSQL_USER=homestead"
+      - "MYSQL_PASSWORD=secret"
+      - "MYSQL_ROOT_PASSWORD=secret"
+    ports:
+        - "33061:3306"
+
+volumes:
+  dbdata:
