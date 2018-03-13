@@ -1,0 +1,3 @@
+convert unagi.jpg 
+	-rotate 90 
+	output.jpg
