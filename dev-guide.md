@@ -43,6 +43,7 @@ Docker provides a set of tools to manage an IT infrastructure from source code t
 | docker stop `container-id` | |
 | docker ps -q &#124; xargs docker kill | # kill all containers |
 | docker attach `container-id` | |
+| detach container `Ctrl+p Ctrl+q` | # Leave the container and back to host OS |
 | docker exec -it `container-id` bash | # ssh into a container |
 | docker container ls -a |# List all containers, even those not running|
 | docker container stop `hash` |# Gracefully stop the specified container|
