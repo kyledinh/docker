@@ -45,12 +45,15 @@ Docker provides a set of tools to manage an IT infrastructure from source code t
 | docker attach `container-id` | |
 | detach container `Ctrl+p Ctrl+q` | # Leave the container and back to host OS |
 | docker exec -it `container-id` bash | # ssh into a container |
+| docker cp somelocaldir/. `container-name`:dir/. | # cp directory content from host to container |
 | docker container ls -a |# List all containers, even those not running|
 | docker container stop `hash` |# Gracefully stop the specified container|
 | docker container kill `hash` |# Force shutdown of the specified container|
 | docker container rm `hash` |# Remove specified container from this machine|
 | docker container rm $(docker container ls -a -q) |# Remove all containers|
 | docker rmi $(docker images &#124; grep "^&lt;none&gt;" &#124; awk "{print $3}") | # Remove all None containers |
+
+
 
 | Docker Compose Commands | Desc |
 |-------------------------|------|
