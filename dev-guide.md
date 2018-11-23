@@ -27,23 +27,26 @@ Docker provides a set of tools to manage an IT infrastructure from source code t
 ## Common Commands
 * https://docs.docker.com/engine/reference/commandline/docker/
 
-| Image Commands | Desc |
-|----------------|------|
-| docker build -t `image-name` .  |# Create image using this directory's Dockerfile|
-| docker image ls -a |# List all images on this machine|
-| docker image rm `image-name` |# Remove specified image from this machine|
-| docker image rm $(docker image ls -a -q)   |# Remove all images from this machine|
+| Container Commands | Desc |
+|--------------------|------|
+| docker version     |      |
+| docker ps          | # View running containers |
+| docker stats       | # Live stream usage stats |
 
 | Container Commands | Desc |
 |--------------------|------|
-| docker ps | # View running containers |
-| docker run -p 4000:80 `image-name`  |# Run "image-name" mapping port 4000 to 80|
+| docker inspect `container-id`  | json desc of container |
+| docker top `container-id`   | display running processes |
+| docker stats `container-id` | |
+| docker logs `container-id`  | |
+| docker port `container-id`  | |
+| docker run -rm -p 4000:80 `image-name`  |# Run "image-name" will remove container when exited|
 | docker run -d -p 4000:80 `image-name` |# Same thing, but in detached mode|
+| docker run -it -p 4000:80 `image-name` |# with a TTY and interactive |
 | docker start `container-id` | |
 | docker stop `container-id` | |
 | docker ps -q &#124; xargs docker kill | # kill all containers |
-| docker attach `container-id` | |
-| detach container `Ctrl+p Ctrl+q` | # Leave the container and back to host OS |
+| docker attach `container-id` | `Ctrl+p Ctrl+q` to leave container to host OS |
 | docker exec -it `container-id` bash | # ssh into a container |
 | docker cp somelocaldir/. `container-name`:dir/. | # cp directory content from host to container |
 | docker container ls -a |# List all containers, even those not running|
@@ -51,9 +54,24 @@ Docker provides a set of tools to manage an IT infrastructure from source code t
 | docker container kill `hash` |# Force shutdown of the specified container|
 | docker container rm `hash` |# Remove specified container from this machine|
 | docker container rm $(docker container ls -a -q) |# Remove all containers|
+| docker container prune | # Remove all stopped containers |
 | docker rmi $(docker images &#124; grep "^&lt;none&gt;" &#124; awk "{print $3}") | # Remove all None containers |
 
+| Image Commands | Desc |
+|----------------|------|
+| docker build -t `image-name` .  |# Create image using this directory's Dockerfile|
+| docker image tag `src-image:version` `new-tag:version` | |
+| docker image ls -a |# List all images on this machine|
+| docker image rm `image-name` |# Remove specified image from this machine|
+| docker image rm $(docker image ls -a -q)   |# Remove all images from this machine|
 
+| Network Commands | Desc |
+|--------------------|------|
+| docker network ls  |      |
+| docker network inspect `network-name` | |
+| docker network create --driver | |
+| docker network connect | |
+| docker network disconnect | |
 
 | Docker Compose Commands | Desc |
 |-------------------------|------|
@@ -63,6 +81,14 @@ Docker provides a set of tools to manage an IT infrastructure from source code t
 | docker-compose kill | stop containers |
 | docker-compose rm | erase stopped containers |
 | docker-compose ps | #Lists the containers for yml file |
+
+| Docker Swarm Commands | Desc |
+|-------------------------|------|
+| docker swarm (init)| |
+| docker node | |
+| docker service | |
+| docker stack | |
+| docker secret | |
 
 | Docker Hub Commands | Desc |
 |---------------------|------|
