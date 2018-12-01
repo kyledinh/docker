@@ -87,99 +87,90 @@ This study guide is based on https://github.com/Evalle/DCA which is based on the
 [docs](https://docs.docker.com/datacenter/dtr/2.0/repos-and-images/delete-an-image/)
 
 ### Domain 3: Installation and Configuration (15% of exam)
-- [Demonstrate the ability to upgrade the Docker engine]() |
+- [Demonstrate the ability to upgrade the Docker engine](install/demonstrate-the-ability-to-upgrade-the-docker-engine.md) |
 [docs](https://askubuntu.com/questions/472412/how-do-i-upgrade-docker)
-- [Complete setup of repo, select a storage driver, and complete installation of Docker
-engine on multiple platforms]() |
+- [Complete setup of repo, select a storage driver, and complete installation of Docker engine](install/complete-setup-of-repo-select-a-storage-driver-and-complete-installation-of-docker-engine.md) |
 [docs](https://docs.docker.com/install/#server)
-- [Configure logging drivers (splunk, journald, etc)]() |
+- [Configure logging drivers (splunk, journald, etc)](install/configure-logging-drivers-splunk-journald-etc.md) |
 [docs](https://docs.docker.com/engine/admin/logging/overview/)
-- [Setup swarm, configure managers, add nodes, and setup backup schedule]() |
+- [Setup swarm, configure managers, add nodes, and setup backup schedule](install/setup-swarm-configure-managers-add-nodes-and-setup-backup-schedule.md) |
 [docs](https://docs.docker.com/engine/swarm/admin_guide/)
-- [Create and manager user and teams]() |
+- [Create and manager user and teams](install/create-and-manager-user-and-teams.md) |
 [docs](https://docs.docker.com/datacenter/dtr/2.4/guides/admin/manage-users/create-and-manage-teams/)
-- [Interpret errors to troubleshoot installation issues without assistance]() |
+- [Interpret errors to troubleshoot installation issues without assistance](install/interpret-errors-to-troubleshoot-installation-issues-without-assistance.md) |
 [docs](https://docs.docker.com/config/daemon/)
-- [Outline the sizing requirements prior to installation]() |
+- [Outline the sizing requirements prior to installation](install/outline-the-sizing-requirements-prior-to-installation.md) |
 [docs](https://docs.docker.com/datacenter/ucp/2.2/guides/admin/install/system-requirements/#hardware-and-software-requirements)
-- [Understand namespaces, cgroups, and configuration of certificates]() |
+- [Understand namespaces, cgroups, and configuration of certificates](install/understand-namespaces-cgroups-and-configuration-of-certificates.md) |
 [docs](https://docs.docker.com/engine/docker-overview/#namespaces)
-- [Use certificate-based client-server authentication to ensure a Docker daemon has the
-rights to access images on a registry]() | [docs](https://docs.docker.com/engine/security/certificates/)
-- Consistently repeat steps to deploy Docker engine, UCP, and DTR on AWS and on
-premises in an HA config [1,](https://docs.docker.com/datacenter/dtr/2.3/guides/admin/install/) [2,](https://docs.docker.com/ee/ucp/) [3](https://docs.docker.com/docker-for-aws/)
-- [Complete configuration of backups for UCP and DTR]() |
+- [Use certificate-based client-server authentication to ensure a Docker daemon has the rights to access images on a registry](install/use-certificate-based-client-server-authentication-to-ensure-a-docker-daemon-has-the-rights-to-access-images-on-a-registry.md) | [docs](https://docs.docker.com/engine/security/certificates/)
+- [Consistently repeat steps to deploy Docker engine, UCP, and DTR on AWS and on premises in an HA config](install/consistently-repeat-steps-to-deploy-docker-engine-UCP-DTR-AWS-and-on-premises-in-HA-config.md) [1,](https://docs.docker.com/datacenter/dtr/2.3/guides/admin/install/) [2,](https://docs.docker.com/ee/ucp/) [3](https://docs.docker.com/docker-for-aws/)
+- [Complete configuration of backups for UCP and DTR](install/complete-configuration-of-backups-for-UCP-and-DTR.md) |
 [docs](https://docs.docker.com/datacenter/ucp/2.2/guides/admin/backups-and-disaster-recovery/)
-- [Configure the Docker daemon to start on boot]() |
-[docs](https://docs.docker.com/engine/installation/linux/linux-postinstall//)
+- [Configure the Docker daemon to start on boot](install/configure-the-docker-daemon-to-start-on-boot.md) |
+[docs](https://docs.docker.com/engine/installation/linux/linux-postinstall/)
 
 ### Domain 4: Networking (15% of exam)
-- [Create a Docker bridge network for a developer to use for their containers]() |
+- [Create a Docker bridge network for a developer to use for their containers](networking/create-a-docker-bridge-network-for-a-developer-to-use-for-their-containers.md) |
 [docs](https://docs.docker.com/engine/userguide/networking/#user-defined-networks)
-- [Troubleshoot container and engine logs to understand a connectivity issue between
-containers]() |
+- [Troubleshoot container and engine logs to understand a connectivity issue between containers](networking/troubleshoot-container-and-engine-logs-to-understand-a-connectivity-issue-between-containers.md) |
 [docs](https://docs.docker.com/docker-for-windows/troubleshoot/)
-- [Publish a port so that an application is accessible externally]() |
+- [Publish a port so that an application is accessible externally](networking/publish-a-port-so-that-an-application-is-accessible-externally.md) |
 [docs](https://github.com/wsargent/docker-cheat-sheet#exposing-ports)
-- [Identify which IP and port a container is externally accessible on]() |
+- [Identify which IP and port a container is externally accessible on](networking/identify-which-ip-and-port-a-container-is-externally-accessible-on.md) |
 [docs](https://docs.docker.com/engine/reference/commandline/port/#examples)
-- [Describe the different types and use cases for the built-in network drivers]() |
+- [Describe the different types and use cases for the built-in network drivers](networking/describe-the-different-types-and-use-cases-for-the-built-in-network-drivers.md) |
 [docs](https://blog.docker.com/2016/12/understanding-docker-networking-drivers-use-cases/)
-- [Understand the Container Network Model and how it interfaces with the Docker engine
-and network and IPAM drivers]() |
+- [Understand the Container Network Model and how it interfaces with the Docker engine and network and IPAM drivers](networking/understand-the-container-network-model-and-how-it-interfaces-with-the-docker-engine-and-network-and-IPAM-drivers.md) |
 [docs](https://success.docker.com/article/networking/)
-- [Configure Docker to use external DNS]() |
+- [Configure Docker to use external DNS](networking/configure-docker-to-use-external-DNS.md) |
 [docs](https://gist.github.com/Evalle/7b21e0357c137875a03480428a7d6bf6)
-- [Use Docker to load balance HTTP/HTTPs traffic to an application (Configure L7 load
-balancing with Docker EE)]() |
+- [Use Docker to load balance HTTP/HTTPs traffic to an application (Configure L7 load balancing with Docker EE)](networking/use-docker-to-load-balance-HTTP-HTTPs-traffic-to-an-application.md) |
 [docs](https://docs.docker.com/datacenter/ucp/2.2/guides/admin/configure/use-a-load-balancer/#configuration-examples)
-- [Understand and describe the types of traffic that flow between the Docker engine,
-registry, and UCP controllers]() |
+- [Understand and describe the types of traffic that flow between the Docker engine, registry, and UCP controllers](networking/understand-and-describe-the-types-of-traffic-that-flow-between-the-Docker-engine-registry-and-UCP-controllers.md) |
 [docs](https://success.docker.com/article/networking/)
-- [Deploy a service on a Docker overlay network]() |
+- [Deploy a service on a Docker overlay network](networking/deploy-a-service-on-a-docker-overlay-network.md) |
 [docs](https://docs.docker.com/network/overlay/)
-- Describe the difference between "host" and "ingress" port publishing mode ([Host](https://docs.docker.com/engine/swarm/services/#publish-a-services-ports-directly-on-the-swarm-node), [Ingress](https://docs.docker.com/engine/swarm/ingress/))
+- [Describe the difference between "host" and "ingress" port publishing mode](networking/describe-the-difference-between-host-and-ingress-port-publishing-mode.md) |  ([Host](https://docs.docker.com/engine/swarm/services/#publish-a-services-ports-directly-on-the-swarm-node), [Ingress](https://docs.docker.com/engine/swarm/ingress/))
 
 ### Domain 5: Security (15% of exam)
-- [Describe the process of signing an image]() |
+- [Describe the process of signing an image](security/describe-the-process-of-signing-an-image.md) |
 [docs](https://docs.docker.com/engine/security/trust/content_trust/#push-trusted-content)
-- [Demonstrate that an image passes a security scan]() |
-[docs](https://docs.docker.com/docker-cloud/builds/image-scan/)
-- [Enable Docker Content Trust]() |
+- [Demonstrate that an image passes a security scan](security/demonstrate-that-an-image-passes-a-security-scan.md) |
+[docs](https://docs.docker.com/datacenter/dtr/2.4/guides/admin/configure/set-up-vulnerability-scans/)
+- [Enable Docker Content Trust](security/enable-docker-content-trust.md) |
 [docs](https://docs.docker.com/engine/security/trust/content_trust/)
-- [Configure RBAC in UCP]() |
+- [Configure RBAC in UCP](security/configure-RBAC-in-UCP.md) |
 [docs](https://docs.docker.com/datacenter/ucp/2.2/guides/access-control/)
-- [Integrate UCP with LDAP/AD]() |
+- [Integrate UCP with LDAP/AD](security/integrate-UCP-with-LDAP-AD.md) |
 [docs](https://docs.docker.com/datacenter/ucp/2.2/guides/admin/configure/external-auth/)
-- [Demonstrate creation of UCP client bundles]() |
+- [Demonstrate creation of UCP client bundles](security/demonstrate-creation-of-UCP-client-bundles.md) |
 [docs](https://blog.docker.com/2017/09/get-familiar-docker-enterprise-edition-client-bundles/)
-- [Describe default engine security]() |
+- [Describe default engine security](security/describe-default-engine-security.md) |
 [docs](https://docs.docker.com/engine/security/security/)
-- [Describe swarm default security]() |
+- [Describe swarm default security](security/describe-swarm-default-security.md) |
 [docs](https://docs.docker.com/engine/swarm/how-swarm-mode-works/pki/)
-- [Describe MTLS]() |
+- [Describe MTLS](security/describe-MTLS.md) |
 [docs](https://diogomonica.com/2017/01/11/hitless-tls-certificate-rotation-in-go/)
 
 ### Domain 6: Storage and Volumes (10% of exam)
-- [State which graph driver should be used on which OS]() |
+- [State which graph driver should be used on which OS](storage/state-which-graph-driver-should-be-used-on-which-OS.md) |
 [docs](https://docs.docker.com/engine/userguide/storagedriver/selectadriver/)
-- [Demonstrate how to configure devicemapper]() |
+- [Demonstrate how to configure devicemapper](storage/demonstrate-how-to-configure-devicemapper.md) |
 [docs](https://docs.docker.com/engine/userguide/storagedriver/device-mapper-driver/)
-- [Compare object storage to block storage, and explain which one is preferable when
-available]() |
+- [Compare object storage to block storage, and explain which one is preferable when available](storage/compare-object-storage-to-block-storage-and-explain-which-one-is-preferable-when-available.md) |
 [docs](http://rancher.com/block-object-file-storage-containers/)
-- [Summarize how an application is composed of layers and where those layers reside on
-the filesystem]() |
+- [Summarize how an application is composed of layers and where those layers reside on the filesystem](storage/summarize-how-an-application-is-composed-of-layers-and-where-those-layers-reside-on-the-filesystem.md) |
 [docs](https://medium.com/@jessgreb01/digging-into-docker-layers-c22f948ed612)
-- [Describe how volumes are used with Docker for persistent storage]() |
+- [Describe how volumes are used with Docker for persistent storage](storage/describe-how-volumes-are-used-with-docker-for-persistent-storage.md) |
 [docs](https://docs.docker.com/engine/admin/volumes/volumes/)
-- [Identify the steps you would take to clean up unused images on a filesystem, also on
-DTR]() |
+- [Identify the steps you would take to clean up unused images on a filesystem, also on DTR](storage/identify-the-steps-you-would-take-to-clean-up-unused-images-on-a-filesystem-also-on-DTR.md) |
 [docs](https://docs.docker.com/engine/reference/commandline/image_prune/)
-- [Demonstrate how storage can be used across cluster nodes]() |
+- [Demonstrate how storage can be used across cluster nodes](storage/https://docs.docker.com/engine/extend/legacy_plugins/#volume-plugins.md) |
 [docs](https://docs.docker.com/engine/extend/legacy_plugins/#volume-plugins)
-- [Identity roles]() |
+- [Identity roles](storage/identity-roles.md) |
 [docs](https://docs.docker.com/datacenter/ucp/2.2/guides/access-control/permission-levels/#roles)
-- [Describe the difference between UCP workers and managers]() |
+- [Describe the difference between UCP workers and managers](storage/describe-the-difference-between-UCP-workers-and-managers.md) |
 [docs](https://docs.docker.com/datacenter/ucp/2.2/guides/architecture/)
-- Describe process to use external certificates with UCP and DTR ([UCP](https://docs.docker.com/ee/ucp/), [DTR](https://docs.docker.com/ee/dtr/))
+- [Describe process to use external certificates with UCP and DTR](storage/describe-process-to-use-external-certificates-with-UCP-and-DTR.md) | 
+([UCP](https://docs.docker.com/ee/ucp/), [DTR](https://docs.docker.com/ee/dtr/))
