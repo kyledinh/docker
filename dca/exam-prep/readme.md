@@ -26,7 +26,7 @@ This study guide is based on https://github.com/Evalle/DCA which is based on the
 [docs](https://docs.docker.com/engine/reference/commandline/stack_services/#related-commands)
 - [Increase number of replicas](orchestration/increase-number-of-replicas.md) |
 [docs](https://docs.docker.com/engine/reference/commandline/service_scale/)
-- [Illustrate running a replicated vs global service](orchestration/) |
+- [Illustrate running a replicated vs global service](orchestration/illustrate-running-a-replicated-vs-global-service.md) |
 [docs](https://docs.docker.com/engine/swarm/how-swarm-mode-works/services/#replicated-and-global-services)
 - [Mount volumes](orchestration/mount-volumes.md) |
 [docs](https://docs.docker.com/storage/volumes/)

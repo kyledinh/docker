@@ -3,12 +3,16 @@
 * `docker pull | login | tag | push | run | create | stop | kill | logs`
 * `docker container`
 * `docker image`
-* `docker service`
 * `docker network`
-* `docker stack`
-* `docker swarm`
 * `docker-compose`
 * `docker-machine`
+
+## Swarm commands
+* `docker swarm`
+* `docker node`
+* `docker service`
+* `docker stack`
+* `docker secret`
 
 ### Docker Management Commands:
 

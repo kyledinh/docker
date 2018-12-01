@@ -4,11 +4,15 @@ A container is an instance of an image, a service can be instances of containers
 
 In short: Docker service is used mostly when you configured the master node with Docker swarm so that docker containers will run in a distributed environment and it can be easily managed.
 
+<img src="https://docs.docker.com/engine/swarm/images/services-diagram.png" />
+
 Docker run: The docker run command first creates a writeable container layer over the specified image, and then starts it using the specified command.
 
 That is, docker run is equivalent to the API /containers/create then /containers/(id)/start
 
 source: https://docs.docker.com/engine/reference/commandline/run/#parent-command
+
+<img src="https://docs.docker.com/engine/swarm/images/service-lifecycle.png" />
 
 Docker service: Docker service will be the image for a microservice within the context of some larger application. Examples of services might include an HTTP server, a database, or any other type of executable program that you wish to run in a distributed environment.
 
