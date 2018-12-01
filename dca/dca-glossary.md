@@ -28,3 +28,4 @@
 * cluster `/var/lib/docker/swarm`
 * containers `/var/lib/docker/containers`
 * layers `/var/lib/docker/aufs diff|layers|mnt`
+* config (logging) - `/etc/docker/daemon.json`
