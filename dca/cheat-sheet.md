@@ -1,6 +1,6 @@
 # Docker Cheat Sheet
 
-**Want to improve this cheat sheet?  See the [Contributing](#contributing) section!**
+Based on https://github.com/wsargent/docker-cheat-sheet
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@
 * [Best Practices](#best-practices)
 * [Security](#security)
 * [Tips](#tips)
-* [Contributing](#contributing)
+
 
 ## Why Docker
 
