@@ -21,12 +21,20 @@
 * UCP REST API
 * VM - a virtual machine (VM) runs a full-blown “guest” operating system with virtual access to host resources through a hypervisor
 
-
-## FILE SYSTEM
-
+## File System
+* config (logging) - `/etc/docker/daemon.json`
 * certs `/etc/docker/certs.d/`
 * cluster `/var/lib/docker/swarm`
 * containers `/var/lib/docker/containers`
 * layers `/var/lib/docker/aufs diff|layers|mnt`
-* config (logging) - `/etc/docker/daemon.json`
 
+## Log Files
+| Operating system	| Location |
+|-------------------|----------|
+| RHEL, Oracle Linux	| `/var/log/messages` |
+| Debian	| `/var/log/daemon.log` |
+| Ubuntu 16.04+, CentOS	| Use the command `journalctl -u docker.service` |
+| Ubuntu 14.10-	| `/var/log/upstart/docker.log` |
+| macOS (Docker 18.01+)	| `~/Library/Containers/com.docker.docker/Data/vms/0/console-ring` |
+| macOS (Docker <18.01) |	`~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/console-ring
+Windows	AppData\Local` |
