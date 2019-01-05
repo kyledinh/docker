@@ -1,127 +1,182 @@
-## Common Commands
-* https://docs.docker.com/engine/reference/commandline/docker/
-* `docker pull | login | tag | push | run | create | stop | kill | logs`
-* `docker container`
-* `docker image`
-* `docker network`
-* `docker-compose`
-* `docker-machine`
+## Docker
 
-## Swarm commands
-* `docker swarm`
-* `docker node`
-* `docker service`
-* `docker stack`
-* `docker secret`
+CONFIG
+* `/etc/docker/daemon.json`
+* `/var/lib/docker/` - data is store on linux host
 
-### Docker Management Commands:
+INFO
+* `docker info`
+* `docker logs [container]`
+* `--format "{{}}"`
 
-| Commands    | Desc  |
-|-------------|--------------------|
-| container   | Manage containers
-| image       | Manage images
-| network     | Manage networks
-| node        | Manage Swarm nodes
-| service     | Manage services
-| swarm       | Manage Swarm
-| volume      | Manage volumes
-| checkpoint  | Manage checkpoints
-| config      | Manage Docker configs
-| manifest    | Manage Docker image manifests and manifest lists
-| plugin      | Manage plugins
-| secret      | Manage Docker secrets
-| system      | Manage Docker
-| trust       | Manage trust on Docker images
+FILTERS
+* id, name, label, exited, status, before, since, volume, network, publish, expose, health, isolation, is-task
 
-### docker-compose
+FORMATS
+* `"{{json .SomeKey}}"`
+* `"table {{.SomeKey}}\t{{.OtherKey}}\t{{.ThatKey}}"`
 
-| Action Commands | Desc |
-|-----------------|------|
-| build              | Build or rebuild services
-| bundle             | Generate a Docker bundle from the Compose file
-| config             | Validate and view the Compose file
-| create             | Create services
-| down               | Stop and remove containers, networks, images, and volumes
-| events             | Receive real time events from containers
-| exec               | Execute a command in a running container
-| kill               | Kill containers
-| pause              | Pause services
-| pull               | Pull service images
-| push               | Push service images
-| restart            | Restart services
-| rm                 | Remove stopped containers
-| run                | Run a one-off command
-| scale              | Set number of containers for a service
-| start              | Start services
-| stop               | Stop services
-| unpause            | Unpause services
-| up                 | Create and start containers
+ACTION
+* `systemctl docker enable` - set docker to launch on boot
 
-| Info Commands | Desc |
-|-----------------|------|
-| help               | Get help on a command
-| images             | List images
-| logs               | View output from containers
-| port               | Print the public port for a port binding
-| ps                 | List containers
-| top                | Display the running processes
+<hr>
+
+## Images
+
+INFO
+* `docker image ls` `--filter "since:[image]"`
+* `docker image inspect [image]` `--format {{json .SomeKey}}`
+* `docker search [image]` `--filter stars=30` `--filter is-official=true`
+
+ACTION
+* `docker login`
+* `docker pull [image]`
+* `docker push [image]:[tag]`
+* `docker tag [source-image]:[tag] [dest-image]:tag`
+* `docker image save [source-image]:[tag] > backup.tar`
+* `docker load --input backup.tar`
+* `docker import backup.tar [dest-image]:tag`
+* `docker build -t [image]:[tag] .` with a Dockerfile
+* `docker image rm [image]`
+* `docker image prune`
+
+<hr>
+
+## Containers
+
+INFO
+* `docker ps` `--filter`
+* `docker container ls`
+* `docker container inspect [container]` `--format "{{}}"`
+* `docker container logs [container]` `--format "{{}}"`
+* `docker logs --tail 100 [container]`
+
+ACTION
+* `docker create`
+* `docker run [image]`
+* `docker start|stop [container]`
+* `docker container rm`
+* `docker exec [container]` `-it` `/bin/bash`
+
+DOCKER-COMPOSE
+* `docker-compose up` with a yaml file
+* `docker-compose down` with a yaml file
+
+<hr>
+
+## Volumes
+INFO
+* `docker volume ls`
+* `docker volume inspect [volume]` `--format`
+
+ACTION
+* `docker volume create [volume]`
+* `docker volume rm [volume]`
+
+DRIVER TYPES
+* local,
+
+<hr>
+
+## Networks
+
+INFO
+* `docker network ls`
+* `docker network inspect [network]` `--format`
 
 
-| Options       | Desc |
-|---------------|------|
-| -f, --file FILE | Specify an alternate compose file (default: docker-compose.yml) |
-| -p, --project-name NAME | Specify an alternate project name (default: directory name) |
-| --verbose | Show more output |
-| --log-level LEVEL | Set log level (DEBUG, INFO, WARNING, ERROR, CRITICAL) |
-| --no-ansi | Do not print ANSI control characters |
-| -v, --version | Print version and exit |
-| -H, --host HOST | Daemon socket to connect to |
-| --tls                       | Use TLS; implied by --tlsverify |
-| --tlscacert CA_PATH         | Trust certs signed only by this CA |
-| --tlscert CLIENT_CERT_PATH  | Path to TLS certificate file |
-| --tlskey TLS_KEY_PATH       | Path to TLS key file |
-| --tlsverify                 | Use TLS and verify the remote |
-| --skip-hostname-check       | Don't check the daemon's hostname against the name specified in the client certificate |
-| --project-directory PATH    | Specify an alternate working directory (default: the path of the Compose file) |
-| --compatibility             | If set, Compose will attempt to convert deploy keys in v3 files to their non-Swarm equivalent |
+ACTION
+* `docker network create [network]` `--driver [drive-type]` `--subnet [0.0.0.0/24]` `--gateway [0.0.0.0]`
+* `docker network rm [network]`
 
-### docker-machine
+DRIVER TYPES
+* bridge, overlay, host
 
-| Action Commands | Desc |
-|-----------------|------|
-| create	| Create a machine |
-| kill    | Kill a machine |
-| provision | Re-provision existing machines |
-| regenerate-certs | Regenerate TLS Certificates for a machine |
-| restart | Restart a machine |
-| rm      | Remove a machine |
-| ssh     | Log into or run a command on a machine with SSH. |
-| scp     | Copy files between machines |
-| mount   | Mount or unmount a directory from a machine with SSHFS. |
-| start   | Start a machine |
-| stop    | Stop a machine |
-| upgrade | Upgrade a machine to the latest version of Docker |
+<hr>
 
-| Info Commands | Desc |
-|---------------|------|
-| active	|	Print which machine is active |
-| config        | Print the connection config for machine |
-| env           | Display the commands to set up the environment for the Docker client |
-| ls            | List machines |
-| status  | Get the status of a machine |
-| url     |	Get the URL of a machine |
-| version | Show the Docker Machine version or a machine docker version |
+## Swarm
 
-| Options       | Desc |
-|---------------|------|
-| --debug, -D		| Enable debug mode |
-| --storage-path, -s |"/Users/kyle/.docker/machine"	Configures storage path [$MACHINE_STORAGE_PATH] |
-| --tls-ca-cert |	CA to verify remotes against [$MACHINE_TLS_CA_CERT] |
-| --tls-ca-key |	Private key to generate certificates [$MACHINE_TLS_CA_KEY] |
-| --tls-client-cert |	Client cert to use for TLS [$MACHINE_TLS_CLIENT_CERT] |
-| --tls-client-key | Private key used in client TLS auth [$MACHINE_TLS_CLIENT_KEY] |
-| --github-api-token | Token to use for requests to the Github API [$MACHINE_GITHUB_API_TOKEN] |
-| --native-ssh | 	Use the native (Go-based) SSH implementation. [$MACHINE_NATIVE_SSH] |
-| --bugsnag-api-token |	BugSnag API token for crash reporting [$MACHINE_BUGSNAG_API_TOKEN] |
-| --help, -h	|	show help |
-| --version, -v |	print the version
+INFO
+* `docker swarm ca`
+* `docker join-token manager|worker`
+
+ACTION
+* `docker swarm init --advertise-addr [0.0.0.0]`
+* `docker swarm update --autolock=true`
+* `docker swarm unlock`
+* `docker swarm unlock-key --rotate`
+* `docker swarm join --token [token]`
+* `docker swarm leave`
+
+UPDATE OPTIONS
+* `--avaliability active|pause|drain`
+
+<hr>
+
+## Nodes
+
+INFO
+* `docker node ls`
+* `docker node ps`
+* `docker node inspect [node]`
+* `docker node inspect self --pretty`
+
+ACTION
+* `docker node demote [node...]`
+* `docker node promote [node...]`
+* `docker node rm [node]`
+* `docker node update`
+
+UPDATE OPTIONS
+* `--avaliability active|pause|drain`
+* `--label-add [key=value,key=vale]`
+* `--label-rm [key=value,key=vale]`
+* `--role worker|manager`
+
+<hr>
+
+## Services
+
+INFO
+* `docker service ls`
+* `docker service ps`
+* `docker service inspect [service]`
+* `docker service logs [service]`
+
+ACTION
+* `docker service create --name [service] [image]`
+* `docker service scale [service]=# [service]=#`
+* `docker service rm [service]`
+* `docker service update --network-rm=ingress testweb`
+
+CREATE OPTIONS
+
+UPDATE OPTIONS
+
+<hr>
+
+## Stacks
+
+INFO
+* `docker stack ls`
+* `docker stack ps [stack]`
+* `docker stack services [stack]`
+
+ACTION
+* `docker stack deploy|up [stack]` `-c [compose-file]`
+* `docker stack rm [stack]`
+
+<hr>
+
+## Other Subjects
+* UCP
+* DTR
+* network drivers
+* storage drivers
+* Container Network Model
+* Swarm
+* Services - OADS
+* Backup
+* Security and Certs
+* Dockerfile
+* docker-compose yaml

@@ -23,6 +23,7 @@
 
 ## File System
 * config (logging) - `/etc/docker/daemon.json`
+* docker.sock - `/var/run/docker.sock`
 * certs `/etc/docker/certs.d/`
 * cluster `/var/lib/docker/swarm`
 * containers `/var/lib/docker/containers`

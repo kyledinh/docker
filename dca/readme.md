@@ -13,9 +13,9 @@
 ## Reference Material
 * [Docker Cheat Sheet](cheat-sheet.md)
 * [Docker Commands](docker-commands.md)
-* [Official Docs](dca-reading-docs.md)
+* [Read the Official Docs](dca-reading-docs.md)
+
 
 ## Articles and Reading
 * https://success.docker.com/article/networking
 * [Container Terminology](https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/)
-*
