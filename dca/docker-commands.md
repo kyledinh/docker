@@ -6,6 +6,7 @@ CONFIG
 
 INFO
 * `docker info`
+* `docker stats`
 * `docker logs [container]`
 * `--format "{{}}"`
 

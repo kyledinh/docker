@@ -18,4 +18,6 @@ Resources:
 Endpoint Mode:  vip
 ```
 
+* Use `--format {{json .SomeKey.SubKey}}`
+
 [doc](https://docs.docker.com/engine/swarm/swarm-tutorial/inspect-service/)
