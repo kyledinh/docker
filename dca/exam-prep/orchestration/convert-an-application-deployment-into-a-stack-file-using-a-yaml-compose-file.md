@@ -2,6 +2,7 @@
 
 ### Usage
 * `docker stack deploy [OPTIONS] STACK`
+* `docker stack deploy --compose-file docker-compose.yml myservice`
 
 | Options | Desc |
 |---------|------|
