@@ -5,6 +5,7 @@ ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 
 RUN go get github.com/gin-gonic/gin \
 && go get go.uber.org/zap \
+&& go get github.com/uber/go-torch \
 && go get github.com/bitly/go-simplejson \
 && go get github.com/spf13/viper \
 && go get github.com/spf13/cobra
