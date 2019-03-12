@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run -it --rm --name plantuml -v $(pwd):/app plantuml $1
+docker run -it --rm --name plantuml -v $(pwd):/app kyledinh/plantuml $1
