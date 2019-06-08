@@ -1,6 +1,8 @@
 FROM openjdk:11-jre-stretch
-RUN mkdir /app
-WORKDIR /app
-COPY plantuml.jar /app
+WORKDIR /opt
+ADD plantuml.jar /opt/
 
-ENTRYPOINT ["java", "-jar", "plantuml.jar", "-svg"]
+RUN mkdir /host
+WORKDIR /host
+
+ENTRYPOINT ["java", "-jar", "/opt/plantuml.jar", "-svg"]
