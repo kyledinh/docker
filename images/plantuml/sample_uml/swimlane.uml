@@ -1,0 +1,101 @@
+@startuml
+
+skinparam sequence {
+	ArrowColor Black
+	ActorBorderColor DeepSkyBlue
+	LifeLineBorderColor #222222
+	LifeLineBackgroundColor #eeeeee
+
+	ParticipantBorderColor Grey
+	ParticipantBackgroundColor White
+	ParticipantFontName Arial
+	ParticipantFontSize 16
+	ParticipantFontColor #000000
+}
+
+
+
+title
+Sample Swimlane of SomeApi Call
+
+end title
+
+participant Client
+
+Client -> SomeApi: POST /some-endpoint
+activate SomeApi
+
+note left of SomeApi #E6EE9C
+{
+  "nest": {
+    "path": 1697882705,
+    "was": {
+      "whether": true,
+      "highest": -391014105.8934579,
+      "office": false,
+      "person": "hurt"
+    },
+    "choose": "picture",
+    "sea": 2103874751.9722624
+  },
+  "play": false,
+  "gun": "certain",
+  "anywhere": false
+}
+end note
+
+
+''''''''''''' FIRST JUMP ''''''''''''''''''''''''''
+
+
+SomeApi -> OtherApi: dir/endpoint
+activate OtherApi
+
+note left of OtherApi #E3F2FD
+{
+  "liquid": -2011693936.0779767,
+  "road": {
+    "contrast": true,
+    "chart": false,
+    "empty": true,
+    "hundred": 556206684.9503231
+  },
+  "quarter": "why",
+  "merely": true
+}
+end note
+
+note left of SomeApi #DCEDC8
+{
+  "someone": [
+    "policeman",
+    "up",
+    true,
+    "next"
+  ],
+  "they": "whenever",
+  "movie": true,
+  "wooden": "dog"
+}
+end note
+
+OtherApi --> SomeApi:
+deactivate OtherApi
+
+
+''''''''''''' RESPONSE ''''''''''''''''''''''''''''''''''''''''''''
+
+SomeApi -> Client: Response
+deactivate SomeApi
+note left of Client #E6EE9C
+{
+   "status_code": 1,
+   "response_data": {
+      "user_id": "72ce577a-9300-11e9-bc42-526af7764f64",
+      "item_id": "bf298385-8aa1-43a9-b04f-782ea46689bb"
+   },
+   "call_reference": "2a9a54d9-c8e3-4b8b-9bd5-dded19c400cf"
+}
+end note
+
+@enduml

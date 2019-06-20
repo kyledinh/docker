@@ -1,6 +1,7 @@
 #FROM ubuntu:18.10
 #FROM java:8
-FROM adoptopenjdk/openjdk8:jdk8u212-b03
+#FROM adoptopenjdk/openjdk8:jdk8u212-b03
+FROM goyalzz/ubuntu-java-8-maven-docker-image
 
 MAINTAINER Kyle Dinh <kyledinh@gmail.com>
 

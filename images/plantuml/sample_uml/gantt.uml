@@ -1,0 +1,12 @@
+@startgantt
+project starts the 2019/06/16
+saturday are closed
+2019/07/05 is closed
+2019/07/17 to 2018/04/19 is closed
+[Prototype design] lasts 14 days
+[Test prototype] lasts 4 days
+[Test prototype] starts at [Prototype design]'s end
+-- Phase Two --
+[Prototype design] is colored in Fuchsia/FireBrick 
+[Test prototype] is colored in GreenYellow/Green 
+@endgantt
