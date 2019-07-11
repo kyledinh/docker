@@ -1,5 +1,5 @@
 #!/bin/bash
-docker run -it --name devbox -v /Users/kyle/src:/opt/src devbox bash
+docker run -it --name devbox -v /Work/kyle/src:/opt/src kyledinh/devbox bash
 say -v Karen Exiting... And removing the dev. linix. container.
 
 # ENVIRONMENT
