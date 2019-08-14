@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1043px" preserveAspectRatio="none" style="width:754px;height:1043px;" version="1.1" viewBox="0 0 754 1043" width="754px" zoomAndPan="magnify"><defs><filter height="300%" id="f1o8ly77m0ubd1" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="265" x="245.25" y="22.9951">Sample Swimlane of SomeApi Call</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="0" x="380.25" y="39.292"/><rect fill="#EEEEEE" filter="url(#f1o8ly77m0ubd1)" height="719.3125" style="stroke: #222222; stroke-width: 1.0;" width="10" x="594" y="118.3516"/><rect fill="#EEEEEE" filter="url(#f1o8ly77m0ubd1)" height="394.9219" style="stroke: #222222; stroke-width: 1.0;" width="10" x="699" y="413.6094"/><line style="stroke: #222222; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="436" x2="436" y1="87.2188" y2="1000.7266"/><line style="stroke: #222222; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="599" x2="599" y1="87.2188" y2="1000.7266"/><line style="stroke: #222222; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="703.5" x2="703.5" y1="87.2188" y2="1000.7266"/><rect fill="#FFFFFF" filter="url(#f1o8ly77m0ubd1)" height="32.625" style="stroke: #808080; stroke-width: 1.5;" width="56" x="406" y="49.5938"/><text fill="#000000" font-family="Arial" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="42" x="413" y="71.4453">Client</text><rect fill="#FFFFFF" filter="url(#f1o8ly77m0ubd1)" height="32.625" style="stroke: #808080; stroke-width: 1.5;" width="56" x="406" y="999.7266"/><text fill="#000000" font-family="Arial" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="42" x="413" y="1021.5781">Client</text><rect fill="#FFFFFF" filter="url(#f1o8ly77m0ubd1)" height="32.625" style="stroke: #808080; stroke-width: 1.5;" width="82" x="556" y="49.5938"/><text fill="#000000" font-family="Arial" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="68" x="563" y="71.4453">SomeApi</text><rect fill="#FFFFFF" filter="url(#f1o8ly77m0ubd1)" height="32.625" style="stroke: #808080; stroke-width: 1.5;" width="82" x="556" y="999.7266"/><text fill="#000000" font-family="Arial" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="68" x="563" y="1021.5781">SomeApi</text><rect fill="#FFFFFF" filter="url(#f1o8ly77m0ubd1)" height="32.625" style="stroke: #808080; stroke-width: 1.5;" width="83" x="660.5" y="49.5938"/><text fill="#000000" font-family="Arial" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="69" x="667.5" y="71.4453">OtherApi</text><rect fill="#FFFFFF" filter="url(#f1o8ly77m0ubd1)" height="32.625" style="stroke: #808080; stroke-width: 1.5;" width="83" x="660.5" y="999.7266"/><text fill="#000000" font-family="Arial" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="69" x="667.5" y="1021.5781">OtherApi</text><rect fill="#EEEEEE" filter="url(#f1o8ly77m0ubd1)" height="719.3125" style="stroke: #222222; stroke-width: 1.0;" width="10" x="594" y="118.3516"/><rect fill="#EEEEEE" filter="url(#f1o8ly77m0ubd1)" height="394.9219" style="stroke: #222222; stroke-width: 1.0;" width="10" x="699" y="413.6094"/><polygon fill="#000000" points="582,114.3516,592,118.3516,582,122.3516,586,118.3516" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="436" x2="588" y1="118.3516" y2="118.3516"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="139" x="443" y="113.2856">POST /some-endpoint</text><path d="M334,131.3516 L334,383.3516 L585,383.3516 L585,141.3516 L575,131.3516 L334,131.3516 " fill="#E6EE9C" filter="url(#f1o8ly77m0ubd1)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M575,131.3516 L575,141.3516 L585,141.3516 L575,131.3516 " fill="#E6EE9C" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="340" y="148.4185">{</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="54" x="348" y="163.5513">"nest": {</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="356" y="178.6841">"path": 1697882705,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="50" x="356" y="193.8169">"was": {</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="99" x="364" y="208.9497">"whether": true,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="206" x="364" y="224.0825">"highest": -391014105.8934579,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="86" x="364" y="239.2153">"office": false,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="98" x="364" y="254.3481">"person": "hurt"</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="12" x="356" y="269.481">},</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="122" x="356" y="284.6138">"choose": "picture",</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="181" x="356" y="299.7466">"sea": 2103874751.9722624</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="12" x="348" y="314.8794">},</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="78" x="348" y="330.0122">"play": false,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="100" x="348" y="345.145">"gun": "certain",</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="109" x="348" y="360.2778">"anywhere": false</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="340" y="375.4106">}</text><polygon fill="#000000" points="687,409.6094,697,413.6094,687,417.6094,691,413.6094" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="604" x2="693" y1="413.6094" y2="413.6094"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="76" x="611" y="408.5435">dir/endpoint</text><path d="M450,426.6094 L450,602.6094 L690,602.6094 L690,436.6094 L680,426.6094 L450,426.6094 " fill="#E3F2FD" filter="url(#f1o8ly77m0ubd1)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M680,426.6094 L680,436.6094 L690,436.6094 L680,426.6094 " fill="#E3F2FD" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="456" y="443.6763">{</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="200" x="464" y="458.8091">"liquid": -2011693936.0779767,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="55" x="464" y="473.9419">"road": {</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="101" x="472" y="489.0747">"contrast": true,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="85" x="472" y="504.2075">"chart": false,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="89" x="472" y="519.3403">"empty": true,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="203" x="472" y="534.4731">"hundred": 556206684.9503231</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="12" x="464" y="549.606">},</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="103" x="464" y="564.7388">"quarter": "why",</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="88" x="464" y="579.8716">"merely": true</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="456" y="595.0044">}</text><path d="M435,617.0703 L435,793.0703 L585,793.0703 L585,627.0703 L575,617.0703 L435,617.0703 " fill="#DCEDC8" filter="url(#f1o8ly77m0ubd1)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M575,617.0703 L575,627.0703 L585,627.0703 L575,617.0703 " fill="#DCEDC8" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="441" y="634.1372">{</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="83" x="449" y="649.27">"someone": [</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="80" x="457" y="664.4028">"policeman",</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="30" x="457" y="679.5356">"up",</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="30" x="457" y="694.6685">true,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="38" x="457" y="709.8013">"next"</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="9" x="449" y="724.9341">],</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="121" x="449" y="740.0669">"they": "whenever",</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="87" x="449" y="755.1997">"movie": true,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="101" x="449" y="770.3325">"wooden": "dog"</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="441" y="785.4653">}</text><polygon fill="#000000" points="615,804.5313,605,808.5313,615,812.5313,611,808.5313" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="609" x2="703" y1="808.5313" y2="808.5313"/><polygon fill="#000000" points="447,833.6641,437,837.6641,447,841.6641,443,837.6641" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="441" x2="598" y1="837.6641" y2="837.6641"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="62" x="453" y="832.5981">Response</text><path d="M8,850.6641 L8,981.6641 L427,981.6641 L427,860.6641 L417,850.6641 L8,850.6641 " fill="#E6EE9C" filter="url(#f1o8ly77m0ubd1)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M417,850.6641 L417,860.6641 L427,860.6641 L417,850.6641 " fill="#E6EE9C" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="14" y="867.731">{</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="108" x="26" y="882.8638">"status_code": 1,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="121" x="26" y="897.9966">"response_data": {</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="344" x="38" y="913.1294">"user_id": "72ce577a-9300-11e9-bc42-526af7764f64",</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="343" x="38" y="928.2622">"item_id": "bf298385-8aa1-43a9-b04f-782ea46689bb"</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="12" x="26" y="943.395">},</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="386" x="26" y="958.5278">"call_reference": "2a9a54d9-c8e3-4b8b-9bd5-dded19c400cf"</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="14" y="973.6606">}</text><!--
+@startuml
+
+skinparam sequence {
+	ArrowColor Black
+	ActorBorderColor DeepSkyBlue
+	LifeLineBorderColor #222222
+	LifeLineBackgroundColor #eeeeee
+
+	ParticipantBorderColor Grey
+	ParticipantBackgroundColor White
+	ParticipantFontName Arial
+	ParticipantFontSize 16
+	ParticipantFontColor #000000
+}
+
+
+
+title
+Sample Swimlane of SomeApi Call
+
+end title
+
+participant Client
+
+Client -> SomeApi: POST /some-endpoint
+activate SomeApi
+
+note left of SomeApi #E6EE9C
+{
+  "nest": {
+    "path": 1697882705,
+    "was": {
+      "whether": true,
+      "highest": -391014105.8934579,
+      "office": false,
+      "person": "hurt"
+    },
+    "choose": "picture",
+    "sea": 2103874751.9722624
+  },
+  "play": false,
+  "gun": "certain",
+  "anywhere": false
+}
+end note
+
+
+
+
+SomeApi -> OtherApi: dir/endpoint
+activate OtherApi
+
+note left of OtherApi #E3F2FD
+{
+  "liquid": -2011693936.0779767,
+  "road": {
+    "contrast": true,
+    "chart": false,
+    "empty": true,
+    "hundred": 556206684.9503231
+  },
+  "quarter": "why",
+  "merely": true
+}
+end note
+
+note left of SomeApi #DCEDC8
+{
+  "someone": [
+    "policeman",
+    "up",
+    true,
+    "next"
+  ],
+  "they": "whenever",
+  "movie": true,
+  "wooden": "dog"
+}
+end note
+
+OtherApi - -> SomeApi:
+deactivate OtherApi
+
+
+
+SomeApi -> Client: Response
+deactivate SomeApi
+note left of Client #E6EE9C
+{
+   "status_code": 1,
+   "response_data": {
+      "user_id": "72ce577a-9300-11e9-bc42-526af7764f64",
+      "item_id": "bf298385-8aa1-43a9-b04f-782ea46689bb"
+   },
+   "call_reference": "2a9a54d9-c8e3-4b8b-9bd5-dded19c400cf"
+}
+end note
+
+@enduml
+
+PlantUML version 1.2019.04beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.3+1-Debian-1bpo91
+Operating System: Linux
+OS Version: 4.9.125-linuxkit
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
